@@ -7,7 +7,7 @@
     .ui-effects-transfer { border: 2px dotted gray; }
   </style>
   <script>
-  $(function() {
+
     function runEffect() {
     	selectedEffect = 'transfer';
       var options = {};
@@ -27,11 +27,7 @@
       }, 1000 );
     };
  
-    $("#button").click(function() {
-      runEffect();
-      return false;
-    });
-  });
+
   </script>
 </head>
 <body>
@@ -46,7 +42,7 @@
 </div>
 <br>
 <br> 
-<input type=button id="button" class="ui-state-default ui-corner-all" value="Run Effect">
+<input onclick="runEffect()" type=button id="button" class="ui-state-default ui-corner-all" value="Run Effect">
  
  
 </body>
